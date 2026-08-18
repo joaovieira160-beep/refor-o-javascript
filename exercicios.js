@@ -296,8 +296,23 @@ SomarN()
 // Dica: use prompt() para pedir o palpite do usuário.
 // ------------------------------------------------------------
 
+function adivinhar(){
+    let secreto = Math.floor(Math.random() * 100) + 1
+    let palpite 
 
+    do{
+        palpite = Number(prompt("qual é o numero?:"))
 
+        if(palpite<secreto){
+            console.log("maior")
+        }else if(palpite>secreto){
+            console.log("menor")
+        }
+    }while(palpite != secreto){
+        console.log("Parabens! voce acertou !!!")
+    }
+}
+adivinhar()
 
 // ============================================================
 //  BLOCO 4 - FUNÇÕES

@@ -236,6 +236,19 @@ notas()
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
+function contador(){
+
+
+let numero = parseInt(prompt("digite um numero para ver a tabuada dele:"))
+let resultado = 0
+
+for (let i = 1; i<= 10 ; i++){
+    if(numero != 0 ){
+        console.log(numero * i)
+    }
+}
+}
+contador()
 
 
 

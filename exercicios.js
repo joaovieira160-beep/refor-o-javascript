@@ -101,7 +101,20 @@ ParImpar()
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
 
+function media(){
+let nota1 = 8
+let nota2 = 9
+let nota3 = 7
 
+let resultado = (nota1 + nota2 + nota3) /3
+console.log(resultado)
+if( resultado>= 7 ){
+    console.log("aluno aprovado")
+}else if(resultado < 7){
+    console.log("aluno reprovado")
+}
+}
+media()
 
 
 // ============================================================
@@ -115,7 +128,18 @@ ParImpar()
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
 
+function Maioridade(){
 
+let resultado = prompt("quantod anos voce tem?")
+
+    if( resultado>= 18 ){
+     console.log("Maior de idade")
+}else if(resultado <= 17){
+     console.log("Menor de idade ")
+}
+}
+
+Maioridade()
 
 
 // EXERCÍCIO 6 - Calculadora de IMC

@@ -22,40 +22,40 @@ const prompt  = require('prompt-sync')()
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
 
-function Calculadora() {
+ function Calculadora() {
 
 
 
 let numero1 = parseFloat(prompt("escolha o primeiro numero:"))
 let numero2 = parseFloat(prompt("escolha segundo numero:"))
 
-let opcao = parseInt(prompt("1)soma\n2)subtraçao\n3)divisao\n4)multiplicaçao\nescolha uma opçao:"))
+ let opcao = parseInt(prompt("1)soma\n2)subtraçao\n3)divisao\n4)multiplicaçao\nescolha uma opçao:"))
 
-let resultado = 0;
+ let resultado = 0;
 
-switch(opcao){
-    case 1 : 
-    resultado = numero1 + numero2
-    console.log("o resultado é: " + resultado  )
-    break
+ switch(opcao){
+     case 1 : 
+     resultado = numero1 + numero2
+     console.log("o resultado é: " + resultado  )
+     break
 
-    case 2 : 
-    resultado =numero1 - numero2
-    console.log("o resultado é: " + resultado  )
-    break
+     case 2 : 
+     resultado =numero1 - numero2
+     console.log("o resultado é: " + resultado  )
+     break
 
     case 3 : 
     resutado = numero1/numero2
     console.log("o resultado é: " + resultado  )
-    break
+     break
 
-    case 4: 
-    resultado = numero1*numero2
-    console.log("o resultado é: " + resultado  )
-    break 
-}
-}
-Calculadora() 
+     case 4: 
+     resultado = numero1*numero2
+     console.log("o resultado é: " + resultado  )
+     break 
+ }
+ }
+ Calculadora() 
 
 // EXERCÍCIO 2 - Conversor de temperatura
 // Crie uma variável com um valor em Celsius.
@@ -63,15 +63,15 @@ Calculadora()
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
 
-function conversor(){
+ function conversor(){
 
 let celcius = parseFloat(prompt("digite quantos graus deseja converter:"))
 
-let f = celcius * 1.8 + 32
+ let f = celcius * 1.8 + 32
 
-console.log(celcius + " graus celcius equivalem a " + f + " graus Fahrenheit")
-}
-conversor()
+ console.log(celcius + " graus celcius equivalem a " + f + " graus Fahrenheit")
+ }
+ conversor()
 
 
 // EXERCÍCIO 3 - Par ou ímpar
@@ -81,7 +81,17 @@ conversor()
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
 
+function ParImpar(){
 
+let numero = parseInt(prompt("escolha um numero:"))
+
+if(numero % 2 ===0){
+    console.log("o numero " + numero + "é par ")
+}else{
+    console.log("o numero " + numero + " é impar")
+}
+}
+ParImpar()
 
 
 // EXERCÍCIO 4 - Média de notas

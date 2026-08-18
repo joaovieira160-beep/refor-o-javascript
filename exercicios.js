@@ -326,7 +326,13 @@ adivinhar()
 // Exemplo: saudacao("Maria") retorna "Olá, Maria!"
 // ------------------------------------------------------------
 
+function saudacao(nome) {
+    return "Olá, " + nome + "!"
+}
 
+console.log(saudacao("sabrina"))
+
+saudacao()
 
 
 // EXERCÍCIO 14 - Número primo

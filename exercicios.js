@@ -426,8 +426,15 @@ console.log(contarVogais(letras))
 // Remova o último item com pop() e mostre a lista novamente.
 // ------------------------------------------------------------
 
+function compras(){
+    let listaCompras = []
 
-
+    listaCompras.push("maça", "arroz", "limao", "leite", "melancia")
+    console.log(listaCompras)
+    listaCompras.pop()
+    console.log(listaCompras)
+}
+compras()
 
 // EXERCÍCIO 18 - Maior e menor
 // Crie um array com 8 números diferentes.

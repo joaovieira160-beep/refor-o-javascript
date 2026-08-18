@@ -480,7 +480,16 @@ Ordenar()
 // Dica: use .filter(function(numero) { return numero % 2 === 0 })
 // ------------------------------------------------------------
 
+function Filtrar(){
+    let numero = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    
 
+   let pares =  numero.filter(function(numero){
+        return numero % 2 === 0
+    })
+    console.log(pares)
+}
+Filtrar()
 
 
 // ============================================================

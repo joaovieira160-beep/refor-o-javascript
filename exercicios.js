@@ -182,8 +182,15 @@ IMC()
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
 
+function Ppt(){
+    let opcoes = ['pedra', 'papel','tesoura']
+    let Jcomputador = opcoes[Math.floor(Math.random() * 3)]
 
+    let Jusuario = prompt(console.log("escolha um\npedra\npapel\ntesoura\n:"))
 
+    console.log("o computador escolheu: " + Jcomputador + " e voce escolheu: " + Jusuario)
+}
+Ppt()
 
 // EXERCÍCIO 8 - Sistema de notas
 // Crie uma variável com uma nota de 0 a 10.

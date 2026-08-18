@@ -55,7 +55,7 @@ switch(opcao){
     break 
 }
 }
-Calculadora()
+Calculadora() 
 
 // EXERCÍCIO 2 - Conversor de temperatura
 // Crie uma variável com um valor em Celsius.
@@ -63,7 +63,15 @@ Calculadora()
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
 
+function conversor(){
 
+let celcius = parseFloat(prompt("digite quantos graus deseja converter:"))
+
+let f = celcius * 1.8 + 32
+
+console.log(celcius + " graus celcius equivalem a " + f + " graus Fahrenheit")
+}
+conversor()
 
 
 // EXERCÍCIO 3 - Par ou ímpar

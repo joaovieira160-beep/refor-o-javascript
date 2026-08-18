@@ -1,26 +1,26 @@
 const prompt  = require('prompt-sync')()
 
-// ============================================================
-//  LISTA DE EXERCÍCIOS - JAVASCRIPT
-// ============================================================
-//  Instruções gerais:
-//  - Resolva os exercícios na ordem, do mais fácil ao mais difícil
-//  - Cada exercício tem uma explicação do que fazer
-//  - Use console.log() para mostrar os resultados
-//  - Para testar, abra o navegador e veja o console (F12)
-//  - Tente fazer sozinho antes de pedir ajuda!
-// ============================================================
+// // ============================================================
+// //  LISTA DE EXERCÍCIOS - JAVASCRIPT
+// // ============================================================
+// //  Instruções gerais:
+// //  - Resolva os exercícios na ordem, do mais fácil ao mais difícil
+// //  - Cada exercício tem uma explicação do que fazer
+// //  - Use console.log() para mostrar os resultados
+// //  - Para testar, abra o navegador e veja o console (F12)
+// //  - Tente fazer sozinho antes de pedir ajuda!
+// // ============================================================
 
 
-// ============================================================
-//  BLOCO 1 - VARIÁVEIS, TIPOS E OPERADORES
-// ============================================================
+// // ============================================================
+// //  BLOCO 1 - VARIÁVEIS, TIPOS E OPERADORES
+// // ============================================================
 
 
-// EXERCÍCIO 1 - Calculadora simples
-// Crie 2 variáveis com números e mostre no console
-// o resultado da soma, subtração, multiplicação e divisão.
-// ------------------------------------------------------------
+// // EXERCÍCIO 1 - Calculadora simples
+// // Crie 2 variáveis com números e mostre no console
+// // o resultado da soma, subtração, multiplicação e divisão.
+// // ------------------------------------------------------------
 
  function Calculadora() {
 
@@ -57,11 +57,11 @@ let numero2 = parseFloat(prompt("escolha segundo numero:"))
  }
  Calculadora() 
 
-// EXERCÍCIO 2 - Conversor de temperatura
-// Crie uma variável com um valor em Celsius.
-// Converta para Fahrenheit e mostre no console.
-// Fórmula: F = C * 9/5 + 32
-// ------------------------------------------------------------
+// // EXERCÍCIO 2 - Conversor de temperatura
+// // Crie uma variável com um valor em Celsius.
+// // Converta para Fahrenheit e mostre no console.
+// // Fórmula: F = C * 9/5 + 32
+// // ------------------------------------------------------------
 
  function conversor(){
 
@@ -74,12 +74,12 @@ let celcius = parseFloat(prompt("digite quantos graus deseja converter:"))
  conversor()
 
 
-// EXERCÍCIO 3 - Par ou ímpar
-// Crie uma variável com um número.
-// Mostre no console se ele é par ou ímpar.
-// Dica: use o operador % (resto da divisão)
-// Se numero % 2 === 0, é par.
-// ------------------------------------------------------------
+// // EXERCÍCIO 3 - Par ou ímpar
+// // Crie uma variável com um número.
+// // Mostre no console se ele é par ou ímpar.
+// // Dica: use o operador % (resto da divisão)
+// // Se numero % 2 === 0, é par.
+// // ------------------------------------------------------------
 
 function ParImpar(){
 
@@ -94,12 +94,12 @@ if(numero % 2 ===0){
 ParImpar()
 
 
-// EXERCÍCIO 4 - Média de notas
-// Crie 3 variáveis com notas (de 0 a 10).
-// Calcule a média e mostre no console.
-// Se a média for >= 7, mostre "Aprovado".
-// Se não, mostre "Reprovado".
-// ------------------------------------------------------------
+// // EXERCÍCIO 4 - Média de notas
+// // Crie 3 variáveis com notas (de 0 a 10).
+// // Calcule a média e mostre no console.
+// // Se a média for >= 7, mostre "Aprovado".
+// // Se não, mostre "Reprovado".
+// // ------------------------------------------------------------
 
 function media(){
 let nota1 = 8
@@ -117,16 +117,16 @@ if( resultado>= 7 ){
 media()
 
 
-// ============================================================
-//  BLOCO 2 - CONDICIONAIS (if/else, switch)
-// ============================================================
+// // ============================================================
+// //  BLOCO 2 - CONDICIONAIS (if/else, switch)
+// // ============================================================
 
 
-// EXERCÍCIO 5 - Maior de idade
-// Crie uma variável com uma idade.
-// Se for >= 18, mostre "Maior de idade".
-// Se não, mostre "Menor de idade".
-// ------------------------------------------------------------
+// // EXERCÍCIO 5 - Maior de idade
+// // Crie uma variável com uma idade.
+// // Se for >= 18, mostre "Maior de idade".
+// // Se não, mostre "Menor de idade".
+// // ------------------------------------------------------------
 
 function Maioridade(){
 
@@ -152,7 +152,25 @@ Maioridade()
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
 
+function IMC(){
 
+    let peso = Number(prompt("qual seu peso?:"))
+    let altura = Number(prompt("qual sua altura?:"))
+
+    let resultado = peso / (altura * altura)
+
+    if(resultado<=18.5){
+        console.log("abaixo do peso")
+    }else if(resultado >= 18.5 && resultado <=24.9){
+        console.log("peso normal")
+    }else if(resultado >= 25 && resultado <=29.9){
+        console.log("sobrepeso")
+    }else{
+        console.log("obesidade")
+    }
+}
+
+IMC()
 
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura

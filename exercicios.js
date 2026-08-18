@@ -370,7 +370,11 @@ console.log(ehPrimo(7))
 // inverter, e join('') para voltar a ser string.
 // ------------------------------------------------------------
 
+function inverter(texto) {
+    return texto.split('').reverse().join('')
+}
 
+console.log(inverter("aula legal"))
 
 
 // EXERCÍCIO 16 - Contar vogais

@@ -444,8 +444,15 @@ compras()
 // Ou tente fazer com um for (mais desafiador!).
 // ------------------------------------------------------------
 
+function maiorMenor(){
+    let numeros = [6,4,5,59,2,23,9,140]
+ 
+    let maior = Math.max(...numeros)
+    let menor = Math.min(...numeros)
+    console.log("o maior numero é: " + maior + " e o menor é: " + menor)
 
-
+}
+maiorMenor()
 
 // EXERCÍCIO 19 - Ordenar nomes
 // Crie um array com 6 nomes de pessoas.

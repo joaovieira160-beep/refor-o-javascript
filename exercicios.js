@@ -461,7 +461,16 @@ maiorMenor()
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
 
+function Ordenar(){
+    let nomes = ["vitor","sabrina","thayna","leo","luane","joao"]
 
+    nomes.sort()
+    console.log(nomes)
+
+    nomes.reverse()
+    console.log(nomes)
+}
+Ordenar()
 
 
 // EXERCÍCIO 20 - Filtrar pares

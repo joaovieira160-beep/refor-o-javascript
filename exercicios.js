@@ -385,7 +385,33 @@ console.log(inverter("aula legal"))
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
 
+function contarVogais(letras) {
+    const vogais = ["a", "e", "i", "o", "u"];
+    let contagem = 0
+   
+    
+    for(let i = 0; i < letras.length; i++){
+        let letraAtual = letras[i];
+        let ehvogal = false;
+    
 
+       for (let j = 0; j < vogais.length; j++) {
+        if(letraAtual === vogais[j] ){
+            ehvogal = true
+            break 
+        }
+        }
+    
+        if(ehvogal === true){
+            contagem++
+        }
+    }
+        return contagem
+}
+
+let letras = prompt("escreva uma frase: ")
+
+console.log(contarVogais(letras))
 
 
 // ============================================================

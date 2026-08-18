@@ -275,7 +275,16 @@ regressiva()
 // Exemplo: se N = 5, resultado = 1+2+3+4+5 = 15
 // ------------------------------------------------------------
 
+function SomarN(){
+    let Numero = Number(prompt("digite um numero: "))
+    let resultado = 0
 
+    for (let i = 0 ; i <= Numero; i++){
+        resultado += i
+    }
+    console.log(resultado)
+}
+SomarN()
 
 
 // EXERCÍCIO 12 - Adivinhe o número

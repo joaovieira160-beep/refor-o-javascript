@@ -202,7 +202,24 @@ Ppt()
 //   2, 1, 0  = "F"
 // ------------------------------------------------------------
 
+function notas(){
 
+    let nota = 7
+
+    if(nota>=9 && nota <=10){
+        console.log("sua nota é: A ")
+    }else if(nota>= 7 && nota <=8){
+        console.log("sua nota é: B")
+    }else if(nota>= 5 && nota <=6){
+        console.log("sua nota é: C")
+    }else if(nota>= 3 && nota <=4){
+        console.log("sua nota é: D")
+    }else if(nota >= 0 && nota <= 2){
+        console.log("sua nota é: F")
+    }
+
+}
+notas()
 
 
 // ============================================================

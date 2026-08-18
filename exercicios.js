@@ -1,3 +1,5 @@
+const prompt  = require('prompt-sync')()
+
 // ============================================================
 //  LISTA DE EXERCÍCIOS - JAVASCRIPT
 // ============================================================
@@ -20,8 +22,40 @@
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
 
+function Calculadora() {
 
 
+
+let numero1 = parseFloat(prompt("escolha o primeiro numero:"))
+let numero2 = parseFloat(prompt("escolha segundo numero:"))
+
+let opcao = parseInt(prompt("1)soma\n2)subtraçao\n3)divisao\n4)multiplicaçao\nescolha uma opçao:"))
+
+let resultado = 0;
+
+switch(opcao){
+    case 1 : 
+    resultado = numero1 + numero2
+    console.log("o resultado é: " + resultado  )
+    break
+
+    case 2 : 
+    resultado =numero1 - numero2
+    console.log("o resultado é: " + resultado  )
+    break
+
+    case 3 : 
+    resutado = numero1/numero2
+    console.log("o resultado é: " + resultado  )
+    break
+
+    case 4: 
+    resultado = numero1*numero2
+    console.log("o resultado é: " + resultado  )
+    break 
+}
+}
+Calculadora()
 
 // EXERCÍCIO 2 - Conversor de temperatura
 // Crie uma variável com um valor em Celsius.

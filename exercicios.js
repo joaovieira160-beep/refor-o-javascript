@@ -507,7 +507,15 @@ Filtrar()
 // Dica: document.body.style.backgroundColor = 'red'
 // ------------------------------------------------------------
 
-
+document.getElementById("botaoVermelho").addEventListener("click", function(){
+    document.body.style.backgroundColor = 'red'
+})
+document.getElementById("botaoAzul").addEventListener("click", function(){
+    document.body.style.backgroundColor = 'blue'
+})
+document.getElementById("botaoVerde").addEventListener("click", function(){
+    document.body.style.backgroundColor = 'green'
+})
 
 
 // EXERCÍCIO 22 - Contador

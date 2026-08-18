@@ -258,7 +258,14 @@ contador()
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
 
+function regressiva(){
+    for (let i = 10; i >= 0; i--) {
+    console.log(i)
+}
 
+console.log("Vamos pra casa!")
+}
+regressiva()
 
 
 // EXERCÍCIO 11 - Somar números

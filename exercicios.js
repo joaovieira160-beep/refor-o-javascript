@@ -546,7 +546,10 @@ document.getElementById("botaocontador").addEventListener("click", function(){
 // display: none
 // ------------------------------------------------------------
 
-
+document.getElementById("apagador").addEventListener("click" , function(){
+    document.getElementById("texto").classList.toggle("esconder")
+})
+ 
 
 
 // EXERCÍCIO 24 - Lista de tarefas

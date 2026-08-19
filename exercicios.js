@@ -551,13 +551,6 @@ document.getElementById("apagador").addEventListener("click" , function(){
 })
  
 
-
-// EXERCÍCIO 24 - Lista de tarefas
-// Esse exercício é a atividade principal!
-// Abra o arquivo script.js da atividade e complete os níveis.
-// ------------------------------------------------------------
-
-
 // ============================================================
 //  BLOCO 7 - DOM + LÓGICA COMBINADA (Desafio!)
 // ============================================================
@@ -570,7 +563,38 @@ document.getElementById("apagador").addEventListener("click" , function(){
 // Dica: use setInterval() para contar e clearInterval() para pausar.
 // ------------------------------------------------------------
 
+let segundos = 0
+let intervalo;
 
+function cronometro(){
+    segundos++
+
+    let minutos = Math.floor(segundos / 60)
+    let segundos_restantes = segundos % 60
+
+    let minutos_formados = String(minutos).padStart(2 , "0")
+    let segundos_formados = String(segundos_restantes).padStart(2 , "0")
+
+    document.getElementById("cronometro").textContent=
+  `${minutos_formados}:${segundos_formados}`
+
+}
+  document.getElementById("iniciar").addEventListener("click", function () {
+    clearInterval(intervalo)
+    intervalo = setInterval(cronometro, 1000);
+});
+
+document.getElementById("pausar").addEventListener("click", function () {
+    clearInterval(intervalo);
+});
+
+document.getElementById("resetar").addEventListener("click", function () {
+    clearInterval(intervalo);
+
+    segundos = 0;
+
+    document.getElementById("cronometro").textContent = "00:00";
+});
 
 
 // EXERCÍCIO 26 - Quiz de perguntas

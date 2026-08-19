@@ -526,7 +526,16 @@ document.getElementById("botaoVerde").addEventListener("click", function(){
 // e atualize o textContent do <h1> a cada clique.
 // ------------------------------------------------------------
 
-
+document.getElementById("botaocontador").addEventListener("click", function(){
+       const contador = document.getElementById("contador");
+        const valorAtual = Number(contador.textContent);
+        contador.textContent = valorAtual + 1;
+    })
+    document.getElementById("botaocontador2").addEventListener("click", function(){
+       const contador = document.getElementById("contador");
+        const valorAtual = Number(contador.textContent);
+        contador.textContent = valorAtual - 1
+    })
 
 
 // EXERCÍCIO 23 - Mostrar e esconder
